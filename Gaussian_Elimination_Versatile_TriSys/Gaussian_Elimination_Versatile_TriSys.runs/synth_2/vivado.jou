@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.1 (64-bit)
+# SW Build 2188600 on Wed Apr  4 18:40:38 MDT 2018
+# IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
+# Start of session at: Tue Jun 29 20:15:36 2021
+# Process ID: 10140
+# Current directory: C:/Users/Hu Jingwei/Dropbox/ROLLO/hardware/Gaussian_Elimination_Versatile_TriSys/Gaussian_Elimination_Versatile_TriSys.runs/synth_2
+# Command line: vivado.exe -log comb_SA.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source comb_SA.tcl
+# Log file: C:/Users/Hu Jingwei/Dropbox/ROLLO/hardware/Gaussian_Elimination_Versatile_TriSys/Gaussian_Elimination_Versatile_TriSys.runs/synth_2/comb_SA.vds
+# Journal file: C:/Users/Hu Jingwei/Dropbox/ROLLO/hardware/Gaussian_Elimination_Versatile_TriSys/Gaussian_Elimination_Versatile_TriSys.runs/synth_2\vivado.jou
+#-----------------------------------------------------------
+source comb_SA.tcl -notrace

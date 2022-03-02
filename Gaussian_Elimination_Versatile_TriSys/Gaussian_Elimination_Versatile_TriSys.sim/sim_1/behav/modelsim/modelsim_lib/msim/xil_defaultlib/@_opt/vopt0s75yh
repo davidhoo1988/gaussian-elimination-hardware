@@ -1,0 +1,121 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\David\Dropbox\LRPC Code\hardware\Gaussian_Elimination_Versatile_TriSys\Gaussian_Elimination_Versatile_TriSys.sim\sim_1\behav\modelsim
+T_opt
+VUaUfc<2M2coez7HXeAVWP0
+Z1 04 10 4 work comb_SA_tb fast 0
+Z2 04 4 4 work glbl fast 0
+=1-94c6916e481e-5e854a96-2e3-41c0
+Z3 o-quiet -auto_acc_if_foreign -work xil_defaultlib -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip +acc
+n@_opt
+Z4 OL;O;10.1c;51
+T_opt1
+V7z;cH^81BzMRY;SCL962@1
+R1
+R2
+=1-94c6916e481e-5e847944-3c3-1638
+R3
+n@_opt1
+R4
+Z5 dC:\Users\David\Dropbox\LRPC Code\hardware\Gaussian_Elimination_Versatile_TriSys\Gaussian_Elimination_Versatile_TriSys.sim\sim_1\behav\modelsim
+vcomb_SA
+I2PkORcU;Dki6H8P@<:]D70
+VE[MbE9^kPcLVWAPdN@P7?0
+R5
+w1585793478
+8../../../../Verilog/comb_SA.v
+F../../../../Verilog/comb_SA.v
+L0 1
+Z6 OL;L;10.1c;51
+r1
+31
+Z7 !s108 1585793674.642000
+Z8 !s107 ../../../../Verilog/clog2.v|../../../../Verilog/define.v|../../../../Verilog/comb_SA_tb.v|../../../../Verilog/node.v|../../../../Verilog/mem.v|../../../../Verilog/comb_SA.v|
+Z9 !s90 -incr|-work|xil_defaultlib|+incdir+../../../../Verilog|../../../../Verilog/comb_SA.v|../../../../Verilog/mem.v|../../../../Verilog/node.v|../../../../Verilog/comb_SA_tb.v|
+Z10 o-work xil_defaultlib -L mtiAvm -L mtiOvm -L mtiUvm -L mtiUPF
+Z11 !s92 -work xil_defaultlib +incdir+../../../../Verilog -L mtiAvm -L mtiOvm -L mtiUvm -L mtiUPF
+ncomb_@s@a
+!i10b 1
+!s100 9eQ4_F9YQkeG_>_LNO>0H0
+!s85 0
+vcomb_SA_tb
+Ib3FSSgGl;<keG2Som_MBb0
+VVHX_L6c=UaAUFWF_>;VLJ1
+R5
+w1585740228
+8../../../../Verilog/comb_SA_tb.v
+F../../../../Verilog/comb_SA_tb.v
+L0 5
+R6
+r1
+31
+R7
+R8
+R9
+R10
+R11
+ncomb_@s@a_tb
+!i10b 1
+!s100 @F4g:WBMGlV<EC7M6of>o1
+!s85 0
+vglbl
+IW[VLR6<Sjz:J_[b[HG]gG0
+VM[9mS]S:KA1i4VeCMX35[3
+R5
+w1522801934
+8glbl.v
+Fglbl.v
+L0 6
+R6
+r1
+31
+R10
+!i10b 1
+!s100 ??YMin6;S^;eQM5I2PDA81
+!s85 0
+!s108 1585793675.143000
+!s107 glbl.v|
+!s90 -work|xil_defaultlib|glbl.v|
+vmem
+I4k;MZJDS>FXeVghaJI7I60
+Va6gT><_CHhmBFO@<6V6gn0
+R5
+w1583910027
+8../../../../Verilog/mem.v
+F../../../../Verilog/mem.v
+L0 11
+R6
+r1
+31
+Z12 !s108 1585649894.834000
+R8
+R9
+R10
+R11
+!s10a 1583910027
+!i10b 1
+!s100 >Cg_Y<XEL0HQ`>_>1?XZN2
+!s85 0
+vprocessor_AB
+ITgInSk@QiJj30fjjR@hl_3
+V;K6ZdP=ZAPh=g03O9YaP:3
+R5
+w1585624155
+8../../../../Verilog/node.v
+F../../../../Verilog/node.v
+L0 2
+R6
+r1
+31
+R12
+R8
+R9
+R10
+R11
+nprocessor_@a@b
+!s10a 1585624155
+!i10b 1
+!s100 1ANCdMk^_@ge<L3W@_RVZ1
+!s85 0

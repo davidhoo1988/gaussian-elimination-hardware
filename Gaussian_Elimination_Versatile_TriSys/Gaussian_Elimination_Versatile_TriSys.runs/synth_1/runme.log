@@ -1,0 +1,1144 @@
+
+*** Running vivado
+    with args -log comb_SA.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source comb_SA.tcl
+
+
+****** Vivado v2018.1 (64-bit)
+  **** SW Build 2188600 on Wed Apr  4 18:40:38 MDT 2018
+  **** IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source comb_SA.tcl -notrace
+Command: synth_design -top comb_SA -part xc7a75tftg256-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a75t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a75t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 13096 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 416.445 ; gain = 103.652
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'comb_SA' [C:/Users/David/Dropbox/LRPC Code/hardware/Gaussian_Elimination_Versatile_TriSys/Verilog/comb_SA.v:1]
+	Parameter DAT_W bound to: 83 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'processor_AB' [C:/Users/David/Dropbox/LRPC Code/hardware/Gaussian_Elimination_Versatile_TriSys/Verilog/node.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'processor_AB' (1#1) [C:/Users/David/Dropbox/LRPC Code/hardware/Gaussian_Elimination_Versatile_TriSys/Verilog/node.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'comb_SA' (2#1) [C:/Users/David/Dropbox/LRPC Code/hardware/Gaussian_Elimination_Versatile_TriSys/Verilog/comb_SA.v:1]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 515.156 ; gain = 202.363
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 515.156 ; gain = 202.363
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 515.156 ; gain = 202.363
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a75tftg256-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/David/Dropbox/LRPC Code/hardware/Gaussian_Elimination_Versatile_TriSys/Gaussian_Elimination_Versatile_TriSys.srcs/constrs_1/new/usr_constrain.xdc]
+Finished Parsing XDC File [C:/Users/David/Dropbox/LRPC Code/hardware/Gaussian_Elimination_Versatile_TriSys/Gaussian_Elimination_Versatile_TriSys.srcs/constrs_1/new/usr_constrain.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.135 . Memory (MB): peak = 878.672 ; gain = 2.313
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:22 ; elapsed = 00:00:37 . Memory (MB): peak = 879.023 ; gain = 566.230
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a75tftg256-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:22 ; elapsed = 00:00:37 . Memory (MB): peak = 879.023 ; gain = 566.230
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:22 ; elapsed = 00:00:37 . Memory (MB): peak = 879.023 ; gain = 566.230
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5544] ROM "r_reg0" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "full_rank" won't be mapped to RAM because it is too sparse
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:26 ; elapsed = 00:00:41 . Memory (MB): peak = 879.023 ; gain = 566.230
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 415   
++---Registers : 
+	               82 Bit    Registers := 2     
+	               81 Bit    Registers := 2     
+	               80 Bit    Registers := 2     
+	               79 Bit    Registers := 2     
+	               78 Bit    Registers := 2     
+	               77 Bit    Registers := 2     
+	               76 Bit    Registers := 2     
+	               75 Bit    Registers := 2     
+	               74 Bit    Registers := 2     
+	               73 Bit    Registers := 2     
+	               72 Bit    Registers := 2     
+	               71 Bit    Registers := 2     
+	               70 Bit    Registers := 2     
+	               69 Bit    Registers := 2     
+	               68 Bit    Registers := 2     
+	               67 Bit    Registers := 2     
+	               66 Bit    Registers := 2     
+	               65 Bit    Registers := 2     
+	               64 Bit    Registers := 2     
+	               63 Bit    Registers := 2     
+	               62 Bit    Registers := 2     
+	               61 Bit    Registers := 2     
+	               60 Bit    Registers := 2     
+	               59 Bit    Registers := 2     
+	               58 Bit    Registers := 2     
+	               57 Bit    Registers := 2     
+	               56 Bit    Registers := 2     
+	               55 Bit    Registers := 2     
+	               54 Bit    Registers := 2     
+	               53 Bit    Registers := 2     
+	               52 Bit    Registers := 2     
+	               51 Bit    Registers := 2     
+	               50 Bit    Registers := 2     
+	               49 Bit    Registers := 2     
+	               48 Bit    Registers := 2     
+	               47 Bit    Registers := 2     
+	               46 Bit    Registers := 2     
+	               45 Bit    Registers := 2     
+	               44 Bit    Registers := 2     
+	               43 Bit    Registers := 2     
+	               42 Bit    Registers := 2     
+	               41 Bit    Registers := 2     
+	               40 Bit    Registers := 2     
+	               39 Bit    Registers := 2     
+	               38 Bit    Registers := 2     
+	               37 Bit    Registers := 2     
+	               36 Bit    Registers := 2     
+	               35 Bit    Registers := 2     
+	               34 Bit    Registers := 2     
+	               33 Bit    Registers := 2     
+	               32 Bit    Registers := 2     
+	               31 Bit    Registers := 2     
+	               30 Bit    Registers := 2     
+	               29 Bit    Registers := 2     
+	               28 Bit    Registers := 2     
+	               27 Bit    Registers := 2     
+	               26 Bit    Registers := 2     
+	               25 Bit    Registers := 2     
+	               24 Bit    Registers := 2     
+	               23 Bit    Registers := 2     
+	               22 Bit    Registers := 2     
+	               21 Bit    Registers := 2     
+	               20 Bit    Registers := 2     
+	               19 Bit    Registers := 2     
+	               18 Bit    Registers := 2     
+	               17 Bit    Registers := 2     
+	               16 Bit    Registers := 2     
+	               15 Bit    Registers := 2     
+	               14 Bit    Registers := 2     
+	               13 Bit    Registers := 2     
+	               12 Bit    Registers := 2     
+	               11 Bit    Registers := 2     
+	               10 Bit    Registers := 2     
+	                9 Bit    Registers := 2     
+	                8 Bit    Registers := 2     
+	                7 Bit    Registers := 2     
+	                6 Bit    Registers := 2     
+	                5 Bit    Registers := 2     
+	                4 Bit    Registers := 4     
+	                3 Bit    Registers := 2     
+	                2 Bit    Registers := 412   
+	                1 Bit    Registers := 1570  
++---Muxes : 
+	   2 Input      2 Bit        Muxes := 1660  
+	   3 Input      2 Bit        Muxes := 830   
+	   5 Input      1 Bit        Muxes := 415   
+	   2 Input      1 Bit        Muxes := 4567  
+	   3 Input      1 Bit        Muxes := 1660  
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module comb_SA 
+Detailed RTL Component Info : 
++---Registers : 
+	               82 Bit    Registers := 2     
+	               81 Bit    Registers := 2     
+	               80 Bit    Registers := 2     
+	               79 Bit    Registers := 2     
+	               78 Bit    Registers := 2     
+	               77 Bit    Registers := 2     
+	               76 Bit    Registers := 2     
+	               75 Bit    Registers := 2     
+	               74 Bit    Registers := 2     
+	               73 Bit    Registers := 2     
+	               72 Bit    Registers := 2     
+	               71 Bit    Registers := 2     
+	               70 Bit    Registers := 2     
+	               69 Bit    Registers := 2     
+	               68 Bit    Registers := 2     
+	               67 Bit    Registers := 2     
+	               66 Bit    Registers := 2     
+	               65 Bit    Registers := 2     
+	               64 Bit    Registers := 2     
+	               63 Bit    Registers := 2     
+	               62 Bit    Registers := 2     
+	               61 Bit    Registers := 2     
+	               60 Bit    Registers := 2     
+	               59 Bit    Registers := 2     
+	               58 Bit    Registers := 2     
+	               57 Bit    Registers := 2     
+	               56 Bit    Registers := 2     
+	               55 Bit    Registers := 2     
+	               54 Bit    Registers := 2     
+	               53 Bit    Registers := 2     
+	               52 Bit    Registers := 2     
+	               51 Bit    Registers := 2     
+	               50 Bit    Registers := 2     
+	               49 Bit    Registers := 2     
+	               48 Bit    Registers := 2     
+	               47 Bit    Registers := 2     
+	               46 Bit    Registers := 2     
+	               45 Bit    Registers := 2     
+	               44 Bit    Registers := 2     
+	               43 Bit    Registers := 2     
+	               42 Bit    Registers := 2     
+	               41 Bit    Registers := 2     
+	               40 Bit    Registers := 2     
+	               39 Bit    Registers := 2     
+	               38 Bit    Registers := 2     
+	               37 Bit    Registers := 2     
+	               36 Bit    Registers := 2     
+	               35 Bit    Registers := 2     
+	               34 Bit    Registers := 2     
+	               33 Bit    Registers := 2     
+	               32 Bit    Registers := 2     
+	               31 Bit    Registers := 2     
+	               30 Bit    Registers := 2     
+	               29 Bit    Registers := 2     
+	               28 Bit    Registers := 2     
+	               27 Bit    Registers := 2     
+	               26 Bit    Registers := 2     
+	               25 Bit    Registers := 2     
+	               24 Bit    Registers := 2     
+	               23 Bit    Registers := 2     
+	               22 Bit    Registers := 2     
+	               21 Bit    Registers := 2     
+	               20 Bit    Registers := 2     
+	               19 Bit    Registers := 2     
+	               18 Bit    Registers := 2     
+	               17 Bit    Registers := 2     
+	               16 Bit    Registers := 2     
+	               15 Bit    Registers := 2     
+	               14 Bit    Registers := 2     
+	               13 Bit    Registers := 2     
+	               12 Bit    Registers := 2     
+	               11 Bit    Registers := 2     
+	               10 Bit    Registers := 2     
+	                9 Bit    Registers := 2     
+	                8 Bit    Registers := 2     
+	                7 Bit    Registers := 2     
+	                6 Bit    Registers := 2     
+	                5 Bit    Registers := 2     
+	                4 Bit    Registers := 4     
+	                3 Bit    Registers := 2     
+	                2 Bit    Registers := 412   
+	                1 Bit    Registers := 1155  
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 2     
+Module processor_AB 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      2 Bit        Muxes := 4     
+	   3 Input      2 Bit        Muxes := 2     
+	   5 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 11    
+	   3 Input      1 Bit        Muxes := 4     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 180 (col length:80)
+BRAMs: 210 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-3886] merging instance 'start_tmp_reg[1]' (FD) to 'start_in_0_1_reg'
+INFO: [Synth 8-3886] merging instance 'start_tmp_reg[2]' (FD) to 'start_in_1_1_reg'
+INFO: [Synth 8-3886] merging instance 'start_tmp_reg[4]' (FD) to 'start_in_3_1_reg'
+INFO: [Synth 8-3886] merging instance 'start_tmp_reg[3]' (FD) to 'start_in_2_1_reg'
+INFO: [Synth 8-3886] merging instance 'start_row_reg[1]' (FD) to 'start_in_0_2_reg'
+INFO: [Synth 8-3886] merging instance 'start_in_1_2_reg' (FD) to 'start_row_reg[2]'
+INFO: [Synth 8-3886] merging instance 'start_in_1_1_reg' (FD) to 'start_in_0_3_reg'
+INFO: [Synth 8-3886] merging instance 'start_row_reg[2]' (FD) to 'start_in_0_4_reg'
+INFO: [Synth 8-3886] merging instance 'start_in_2_2_reg' (FD) to 'start_row_reg[3]'
+INFO: [Synth 8-3886] merging instance 'start_in_2_1_reg' (FD) to 'start_in_1_3_reg'
+INFO: [Synth 8-3886] merging instance 'start_row_reg[4]' (FD) to 'start_in_3_2_reg'
+INFO: [Synth 8-3886] merging instance 'start_in_4_1_reg' (FD) to 'start_in_3_3_reg'
+INFO: [Synth 8-3886] merging instance 'start_row_reg[3]' (FD) to 'start_in_1_4_reg'
+INFO: [Synth 8-3886] merging instance 'start_in_3_4_reg' (FD) to 'start_in_4_2_reg'
+INFO: [Synth 8-3886] merging instance 'start_in_3_1_reg' (FD) to 'start_in_2_3_reg'
+INFO: [Synth 8-3886] merging instance 'start_in_0_5_reg' (FD) to 'start_in_1_3_reg'
+INFO: [Synth 8-3886] merging instance 'start_in_1_5_reg' (FD) to 'start_in_2_3_reg'
+INFO: [Synth 8-3886] merging instance 'start_in_2_4_reg' (FD) to 'start_in_1_6_reg'
+INFO: [Synth 8-3886] merging instance 'start_in_4_3_reg' (FD) to 'start_in_3_5_reg'
+INFO: [Synth 8-3886] merging instance 'start_in_1_4_reg' (FD) to 'start_in_0_6_reg'
+INFO: [Synth 8-3886] merging instance 'start_in_3_6_reg' (FD) to 'start_in_4_4_reg'
+INFO: [Synth 8-3886] merging instance 'start_in_3_2_reg' (FD) to 'start_in_1_6_reg'
+INFO: [Synth 8-3886] merging instance 'start_in_2_3_reg' (FD) to 'start_in_0_7_reg'
+INFO: [Synth 8-3886] merging instance 'start_in_0_8_reg' (FD) to 'start_in_1_6_reg'
+INFO: [Synth 8-3886] merging instance 'start_in_1_7_reg' (FD) to 'start_in_0_9_reg'
+INFO: [Synth 8-3886] merging instance 'start_in_2_5_reg' (FD) to 'start_in_0_9_reg'
+INFO: [Synth 8-3886] merging instance 'start_in_4_5_reg' (FD) to 'start_in_3_7_reg'
+INFO: [Synth 8-3886] merging instance 'start_in_3_8_reg' (FD) to 'start_in_4_6_reg'
+INFO: [Synth 8-3886] merging instance 'start_in_3_3_reg' (FD) to 'start_in_0_9_reg'
+INFO: [Synth 8-3886] merging instance 'start_in_0_10_reg' (FD) to 'start_in_4_2_reg'
+INFO: [Synth 8-3886] merging instance 'start_in_1_8_reg' (FD) to 'start_in_4_2_reg'
+INFO: [Synth 8-3886] merging instance 'start_in_2_6_reg' (FD) to 'start_in_4_2_reg'
+INFO: [Synth 8-3886] merging instance 'start_in_4_7_reg' (FD) to 'start_in_3_9_reg'
+INFO: [Synth 8-3886] merging instance 'start_in_3_10_reg' (FD) to 'start_in_4_8_reg'
+INFO: [Synth 8-3886] merging instance 'start_in_3_5_reg' (FD) to 'start_in_2_7_reg'
+INFO: [Synth 8-3886] merging instance 'start_in_0_11_reg' (FD) to 'start_in_2_7_reg'
+INFO: [Synth 8-3886] merging instance 'start_in_1_9_reg' (FD) to 'start_in_2_7_reg'
+INFO: [Synth 8-3886] merging instance 'start_in_2_8_reg' (FD) to 'start_in_1_10_reg'
+INFO: [Synth 8-3886] merging instance 'start_in_4_9_reg' (FD) to 'start_in_3_11_reg'
+INFO: [Synth 8-3886] merging instance 'start_in_3_12_reg' (FD) to 'start_in_4_10_reg'
+INFO: [Synth 8-3886] merging instance 'start_in_4_4_reg' (FD) to 'start_in_1_10_reg'
+INFO: [Synth 8-3886] merging instance 'start_in_0_12_reg' (FD) to 'start_in_1_10_reg'
+INFO: [Synth 8-3886] merging instance 'start_in_1_11_reg' (FD) to 'start_in_0_13_reg'
+INFO: [Synth 8-3886] merging instance 'start_in_2_9_reg' (FD) to 'start_in_0_13_reg'
+INFO: [Synth 8-3886] merging instance 'start_in_4_11_reg' (FD) to 'start_in_3_13_reg'
+INFO: [Synth 8-3886] merging instance 'start_in_3_14_reg' (FD) to 'start_in_4_12_reg'
+INFO: [Synth 8-3886] merging instance 'start_in_3_7_reg' (FD) to 'start_in_0_13_reg'
+INFO: [Synth 8-3886] merging instance 'start_in_0_14_reg' (FD) to 'start_in_4_6_reg'
+INFO: [Synth 8-3886] merging instance 'start_in_1_12_reg' (FD) to 'start_in_4_6_reg'
+INFO: [Synth 8-3886] merging instance 'start_in_2_10_reg' (FD) to 'start_in_4_6_reg'
+INFO: [Synth 8-3886] merging instance 'start_in_4_13_reg' (FD) to 'start_in_3_15_reg'
+INFO: [Synth 8-3886] merging instance 'start_in_3_16_reg' (FD) to 'start_in_4_14_reg'
+INFO: [Synth 8-3886] merging instance 'start_in_3_9_reg' (FD) to 'start_in_2_11_reg'
+INFO: [Synth 8-3886] merging instance 'start_in_0_15_reg' (FD) to 'start_in_2_11_reg'
+INFO: [Synth 8-3886] merging instance 'start_in_1_13_reg' (FD) to 'start_in_2_11_reg'
+INFO: [Synth 8-3886] merging instance 'start_in_2_12_reg' (FD) to 'start_in_1_14_reg'
+INFO: [Synth 8-3886] merging instance 'start_in_4_15_reg' (FD) to 'start_in_3_17_reg'
+INFO: [Synth 8-3886] merging instance 'start_in_3_18_reg' (FD) to 'start_in_4_16_reg'
+INFO: [Synth 8-3886] merging instance 'start_in_4_8_reg' (FD) to 'start_in_1_14_reg'
+INFO: [Synth 8-3886] merging instance 'start_in_0_16_reg' (FD) to 'start_in_1_14_reg'
+INFO: [Synth 8-3886] merging instance 'start_in_1_15_reg' (FD) to 'start_in_0_17_reg'
+INFO: [Synth 8-3886] merging instance 'start_in_2_13_reg' (FD) to 'start_in_0_17_reg'
+INFO: [Synth 8-3886] merging instance 'start_in_4_17_reg' (FD) to 'start_in_3_19_reg'
+INFO: [Synth 8-3886] merging instance 'start_in_3_20_reg' (FD) to 'start_in_4_18_reg'
+INFO: [Synth 8-3886] merging instance 'start_in_3_11_reg' (FD) to 'start_in_0_17_reg'
+INFO: [Synth 8-3886] merging instance 'start_in_0_18_reg' (FD) to 'start_in_4_10_reg'
+INFO: [Synth 8-3886] merging instance 'start_in_1_16_reg' (FD) to 'start_in_4_10_reg'
+INFO: [Synth 8-3886] merging instance 'start_in_2_14_reg' (FD) to 'start_in_4_10_reg'
+INFO: [Synth 8-3886] merging instance 'start_in_4_19_reg' (FD) to 'start_in_3_21_reg'
+INFO: [Synth 8-3886] merging instance 'start_in_3_22_reg' (FD) to 'start_in_4_20_reg'
+INFO: [Synth 8-3886] merging instance 'start_in_3_13_reg' (FD) to 'start_in_2_15_reg'
+INFO: [Synth 8-3886] merging instance 'start_in_0_19_reg' (FD) to 'start_in_2_15_reg'
+INFO: [Synth 8-3886] merging instance 'start_in_1_17_reg' (FD) to 'start_in_2_15_reg'
+INFO: [Synth 8-3886] merging instance 'start_in_2_16_reg' (FD) to 'start_in_1_18_reg'
+INFO: [Synth 8-3886] merging instance 'start_in_4_21_reg' (FD) to 'start_in_3_23_reg'
+INFO: [Synth 8-3886] merging instance 'start_in_3_24_reg' (FD) to 'start_in_4_22_reg'
+INFO: [Synth 8-3886] merging instance 'start_in_4_12_reg' (FD) to 'start_in_1_18_reg'
+INFO: [Synth 8-3886] merging instance 'start_in_0_20_reg' (FD) to 'start_in_1_18_reg'
+INFO: [Synth 8-3886] merging instance 'start_in_1_19_reg' (FD) to 'start_in_0_21_reg'
+INFO: [Synth 8-3886] merging instance 'start_in_2_17_reg' (FD) to 'start_in_0_21_reg'
+INFO: [Synth 8-3886] merging instance 'start_in_4_23_reg' (FD) to 'start_in_3_25_reg'
+INFO: [Synth 8-3886] merging instance 'start_in_3_26_reg' (FD) to 'start_in_4_24_reg'
+INFO: [Synth 8-3886] merging instance 'start_in_3_15_reg' (FD) to 'start_in_0_21_reg'
+INFO: [Synth 8-3886] merging instance 'start_in_0_22_reg' (FD) to 'start_in_4_14_reg'
+INFO: [Synth 8-3886] merging instance 'start_in_1_20_reg' (FD) to 'start_in_4_14_reg'
+INFO: [Synth 8-3886] merging instance 'start_in_2_18_reg' (FD) to 'start_in_4_14_reg'
+INFO: [Synth 8-3886] merging instance 'start_in_4_25_reg' (FD) to 'start_in_3_27_reg'
+INFO: [Synth 8-3886] merging instance 'start_in_3_28_reg' (FD) to 'start_in_4_26_reg'
+INFO: [Synth 8-3886] merging instance 'start_in_3_17_reg' (FD) to 'start_in_2_19_reg'
+INFO: [Synth 8-3886] merging instance 'start_in_0_23_reg' (FD) to 'start_in_2_19_reg'
+INFO: [Synth 8-3886] merging instance 'start_in_1_21_reg' (FD) to 'start_in_2_19_reg'
+INFO: [Synth 8-3886] merging instance 'start_in_2_20_reg' (FD) to 'start_in_1_22_reg'
+INFO: [Synth 8-3886] merging instance 'start_in_4_27_reg' (FD) to 'start_in_3_29_reg'
+INFO: [Synth 8-3886] merging instance 'start_in_3_30_reg' (FD) to 'start_in_4_28_reg'
+INFO: [Synth 8-3886] merging instance 'start_in_4_16_reg' (FD) to 'start_in_1_22_reg'
+INFO: [Synth 8-3886] merging instance 'start_in_0_24_reg' (FD) to 'start_in_1_22_reg'
+INFO: [Synth 8-3886] merging instance 'start_in_1_23_reg' (FD) to 'start_in_0_25_reg'
+INFO: [Synth 8-3886] merging instance 'start_in_2_21_reg' (FD) to 'start_in_0_25_reg'
+INFO: [Synth 8-3886] merging instance 'start_in_4_29_reg' (FD) to 'start_in_3_31_reg'
+INFO: [Synth 8-3886] merging instance 'start_in_3_32_reg' (FD) to 'start_in_4_30_reg'
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:43 ; elapsed = 00:01:02 . Memory (MB): peak = 879.023 ; gain = 566.230
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:52 ; elapsed = 00:01:11 . Memory (MB): peak = 898.867 ; gain = 586.074
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:54 ; elapsed = 00:01:13 . Memory (MB): peak = 937.875 ; gain = 625.082
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:58 ; elapsed = 00:01:18 . Memory (MB): peak = 954.797 ; gain = 642.004
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:59 ; elapsed = 00:01:19 . Memory (MB): peak = 954.797 ; gain = 642.004
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:59 ; elapsed = 00:01:19 . Memory (MB): peak = 954.797 ; gain = 642.004
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:00 ; elapsed = 00:01:19 . Memory (MB): peak = 954.797 ; gain = 642.004
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:00 ; elapsed = 00:01:19 . Memory (MB): peak = 954.797 ; gain = 642.004
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:00 ; elapsed = 00:01:20 . Memory (MB): peak = 954.797 ; gain = 642.004
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:00 ; elapsed = 00:01:20 . Memory (MB): peak = 954.797 ; gain = 642.004
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++------------+----------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name | RTL Name             | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++------------+----------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|comb_SA     | result_col78_reg[4]  | 4      | 1     | NO           | YES                | YES               | 1      | 0       | 
+|comb_SA     | result_col77_reg[5]  | 5      | 1     | NO           | YES                | YES               | 1      | 0       | 
+|comb_SA     | result_col76_reg[6]  | 6      | 1     | NO           | YES                | YES               | 1      | 0       | 
+|comb_SA     | result_col75_reg[7]  | 7      | 1     | NO           | YES                | YES               | 1      | 0       | 
+|comb_SA     | result_col74_reg[8]  | 8      | 1     | NO           | YES                | YES               | 1      | 0       | 
+|comb_SA     | result_col73_reg[9]  | 9      | 1     | NO           | YES                | YES               | 1      | 0       | 
+|comb_SA     | result_col72_reg[10] | 10     | 1     | NO           | YES                | YES               | 1      | 0       | 
+|comb_SA     | result_col71_reg[11] | 11     | 1     | NO           | YES                | YES               | 1      | 0       | 
+|comb_SA     | result_col70_reg[12] | 12     | 1     | NO           | YES                | YES               | 1      | 0       | 
+|comb_SA     | result_col69_reg[13] | 13     | 1     | NO           | YES                | YES               | 1      | 0       | 
+|comb_SA     | result_col68_reg[14] | 14     | 1     | NO           | YES                | YES               | 1      | 0       | 
+|comb_SA     | result_col67_reg[15] | 15     | 1     | NO           | YES                | YES               | 1      | 0       | 
+|comb_SA     | result_col66_reg[16] | 16     | 1     | NO           | YES                | YES               | 1      | 0       | 
+|comb_SA     | result_col65_reg[17] | 17     | 1     | NO           | YES                | YES               | 1      | 0       | 
+|comb_SA     | result_col64_reg[18] | 18     | 1     | NO           | YES                | YES               | 1      | 0       | 
+|comb_SA     | result_col63_reg[19] | 19     | 1     | NO           | YES                | YES               | 0      | 1       | 
+|comb_SA     | result_col62_reg[20] | 20     | 1     | NO           | YES                | YES               | 0      | 1       | 
+|comb_SA     | result_col61_reg[21] | 21     | 1     | NO           | YES                | YES               | 0      | 1       | 
+|comb_SA     | result_col60_reg[22] | 22     | 1     | NO           | YES                | YES               | 0      | 1       | 
+|comb_SA     | result_col59_reg[23] | 23     | 1     | NO           | YES                | YES               | 0      | 1       | 
+|comb_SA     | result_col58_reg[24] | 24     | 1     | NO           | YES                | YES               | 0      | 1       | 
+|comb_SA     | result_col57_reg[25] | 25     | 1     | NO           | YES                | YES               | 0      | 1       | 
+|comb_SA     | result_col56_reg[26] | 26     | 1     | NO           | YES                | YES               | 0      | 1       | 
+|comb_SA     | result_col55_reg[27] | 27     | 1     | NO           | YES                | YES               | 0      | 1       | 
+|comb_SA     | result_col54_reg[28] | 28     | 1     | NO           | YES                | YES               | 0      | 1       | 
+|comb_SA     | result_col53_reg[29] | 29     | 1     | NO           | YES                | YES               | 0      | 1       | 
+|comb_SA     | result_col52_reg[30] | 30     | 1     | NO           | YES                | YES               | 0      | 1       | 
+|comb_SA     | result_col51_reg[31] | 31     | 1     | NO           | YES                | YES               | 0      | 1       | 
+|comb_SA     | result_col50_reg[32] | 32     | 1     | NO           | YES                | YES               | 0      | 1       | 
+|comb_SA     | result_col49_reg[33] | 33     | 1     | NO           | YES                | YES               | 0      | 1       | 
+|comb_SA     | result_col48_reg[34] | 34     | 1     | NO           | YES                | YES               | 0      | 1       | 
+|comb_SA     | result_col47_reg[35] | 35     | 1     | NO           | YES                | YES               | 0      | 2       | 
+|comb_SA     | result_col46_reg[36] | 36     | 1     | NO           | YES                | YES               | 0      | 2       | 
+|comb_SA     | result_col45_reg[37] | 37     | 1     | NO           | YES                | YES               | 0      | 2       | 
+|comb_SA     | result_col44_reg[38] | 38     | 1     | NO           | YES                | YES               | 0      | 2       | 
+|comb_SA     | result_col43_reg[39] | 39     | 1     | NO           | YES                | YES               | 0      | 2       | 
+|comb_SA     | result_col42_reg[40] | 40     | 1     | NO           | YES                | YES               | 0      | 2       | 
+|comb_SA     | result_col41_reg[41] | 41     | 1     | NO           | YES                | YES               | 0      | 2       | 
+|comb_SA     | result_col40_reg[42] | 42     | 1     | NO           | YES                | YES               | 0      | 2       | 
+|comb_SA     | result_col39_reg[43] | 43     | 1     | NO           | YES                | YES               | 0      | 2       | 
+|comb_SA     | result_col38_reg[44] | 44     | 1     | NO           | YES                | YES               | 0      | 2       | 
+|comb_SA     | result_col37_reg[45] | 45     | 1     | NO           | YES                | YES               | 0      | 2       | 
+|comb_SA     | result_col36_reg[46] | 46     | 1     | NO           | YES                | YES               | 0      | 2       | 
+|comb_SA     | result_col35_reg[47] | 47     | 1     | NO           | YES                | YES               | 0      | 2       | 
+|comb_SA     | result_col34_reg[48] | 48     | 1     | NO           | YES                | YES               | 0      | 2       | 
+|comb_SA     | result_col33_reg[49] | 49     | 1     | NO           | YES                | YES               | 0      | 2       | 
+|comb_SA     | result_col32_reg[50] | 50     | 1     | NO           | YES                | YES               | 0      | 2       | 
+|comb_SA     | result_col31_reg[51] | 51     | 1     | NO           | YES                | YES               | 0      | 2       | 
+|comb_SA     | result_col30_reg[52] | 52     | 1     | NO           | YES                | YES               | 0      | 2       | 
+|comb_SA     | result_col29_reg[53] | 53     | 1     | NO           | YES                | YES               | 0      | 2       | 
+|comb_SA     | result_col28_reg[54] | 54     | 1     | NO           | YES                | YES               | 0      | 2       | 
+|comb_SA     | result_col27_reg[55] | 55     | 1     | NO           | YES                | YES               | 0      | 2       | 
+|comb_SA     | result_col26_reg[56] | 56     | 1     | NO           | YES                | YES               | 0      | 2       | 
+|comb_SA     | result_col25_reg[57] | 57     | 1     | NO           | YES                | YES               | 0      | 2       | 
+|comb_SA     | result_col24_reg[58] | 58     | 1     | NO           | YES                | YES               | 0      | 2       | 
+|comb_SA     | result_col23_reg[59] | 59     | 1     | NO           | YES                | YES               | 0      | 2       | 
+|comb_SA     | result_col22_reg[60] | 60     | 1     | NO           | YES                | YES               | 0      | 2       | 
+|comb_SA     | result_col21_reg[61] | 61     | 1     | NO           | YES                | YES               | 0      | 2       | 
+|comb_SA     | result_col20_reg[62] | 62     | 1     | NO           | YES                | YES               | 0      | 2       | 
+|comb_SA     | result_col19_reg[63] | 63     | 1     | NO           | YES                | YES               | 0      | 2       | 
+|comb_SA     | result_col18_reg[64] | 64     | 1     | NO           | YES                | YES               | 0      | 2       | 
+|comb_SA     | result_col17_reg[65] | 65     | 1     | NO           | YES                | YES               | 0      | 2       | 
+|comb_SA     | result_col16_reg[66] | 66     | 1     | NO           | YES                | YES               | 0      | 2       | 
+|comb_SA     | result_col15_reg[67] | 67     | 1     | NO           | YES                | YES               | 0      | 3       | 
+|comb_SA     | result_col14_reg[68] | 68     | 1     | NO           | YES                | YES               | 0      | 3       | 
+|comb_SA     | result_col13_reg[69] | 69     | 1     | NO           | YES                | YES               | 0      | 3       | 
+|comb_SA     | result_col12_reg[70] | 70     | 1     | NO           | YES                | YES               | 0      | 3       | 
+|comb_SA     | result_col11_reg[71] | 71     | 1     | NO           | YES                | YES               | 0      | 3       | 
+|comb_SA     | result_col10_reg[72] | 72     | 1     | NO           | YES                | YES               | 0      | 3       | 
+|comb_SA     | result_col9_reg[73]  | 73     | 1     | NO           | YES                | YES               | 0      | 3       | 
+|comb_SA     | result_col8_reg[74]  | 74     | 1     | NO           | YES                | YES               | 0      | 3       | 
+|comb_SA     | result_col7_reg[75]  | 75     | 1     | NO           | YES                | YES               | 0      | 3       | 
+|comb_SA     | result_col6_reg[76]  | 76     | 1     | NO           | YES                | YES               | 0      | 3       | 
+|comb_SA     | result_col5_reg[77]  | 77     | 1     | NO           | YES                | YES               | 0      | 3       | 
+|comb_SA     | result_col4_reg[78]  | 78     | 1     | NO           | YES                | YES               | 0      | 3       | 
+|comb_SA     | result_col3_reg[79]  | 79     | 1     | NO           | YES                | YES               | 0      | 3       | 
+|comb_SA     | result_col2_reg[80]  | 80     | 1     | NO           | YES                | YES               | 0      | 3       | 
+|comb_SA     | result_col1_reg[81]  | 81     | 1     | NO           | YES                | YES               | 0      | 3       | 
+|comb_SA     | result_col0_reg[82]  | 82     | 1     | NO           | NO                 | YES               | 0      | 3       | 
+|comb_SA     | data_col82_reg[82]   | 82     | 1     | NO           | YES                | YES               | 0      | 3       | 
+|comb_SA     | data_col81_reg[81]   | 81     | 1     | NO           | YES                | YES               | 0      | 3       | 
+|comb_SA     | data_col80_reg[80]   | 80     | 1     | NO           | YES                | YES               | 0      | 3       | 
+|comb_SA     | data_col79_reg[79]   | 79     | 1     | NO           | YES                | YES               | 0      | 3       | 
+|comb_SA     | data_col78_reg[78]   | 78     | 1     | NO           | YES                | YES               | 0      | 3       | 
+|comb_SA     | data_col77_reg[77]   | 77     | 1     | NO           | YES                | YES               | 0      | 3       | 
+|comb_SA     | data_col76_reg[76]   | 76     | 1     | NO           | YES                | YES               | 0      | 3       | 
+|comb_SA     | data_col75_reg[75]   | 75     | 1     | NO           | YES                | YES               | 0      | 3       | 
+|comb_SA     | data_col74_reg[74]   | 74     | 1     | NO           | YES                | YES               | 0      | 3       | 
+|comb_SA     | data_col73_reg[73]   | 73     | 1     | NO           | YES                | YES               | 0      | 3       | 
+|comb_SA     | data_col72_reg[72]   | 72     | 1     | NO           | YES                | YES               | 0      | 3       | 
+|comb_SA     | data_col71_reg[71]   | 71     | 1     | NO           | YES                | YES               | 0      | 3       | 
+|comb_SA     | data_col70_reg[70]   | 70     | 1     | NO           | YES                | YES               | 0      | 3       | 
+|comb_SA     | data_col69_reg[69]   | 69     | 1     | NO           | YES                | YES               | 0      | 3       | 
+|comb_SA     | data_col68_reg[68]   | 68     | 1     | NO           | YES                | YES               | 0      | 3       | 
+|comb_SA     | data_col67_reg[67]   | 67     | 1     | NO           | YES                | YES               | 0      | 3       | 
+|comb_SA     | data_col66_reg[66]   | 66     | 1     | NO           | YES                | YES               | 0      | 2       | 
+|comb_SA     | data_col65_reg[65]   | 65     | 1     | NO           | YES                | YES               | 0      | 2       | 
+|comb_SA     | data_col64_reg[64]   | 64     | 1     | NO           | YES                | YES               | 0      | 2       | 
+|comb_SA     | data_col63_reg[63]   | 63     | 1     | NO           | YES                | YES               | 0      | 2       | 
+|comb_SA     | data_col62_reg[62]   | 62     | 1     | NO           | YES                | YES               | 0      | 2       | 
+|comb_SA     | data_col61_reg[61]   | 61     | 1     | NO           | YES                | YES               | 0      | 2       | 
+|comb_SA     | data_col60_reg[60]   | 60     | 1     | NO           | YES                | YES               | 0      | 2       | 
+|comb_SA     | data_col59_reg[59]   | 59     | 1     | NO           | YES                | YES               | 0      | 2       | 
+|comb_SA     | data_col58_reg[58]   | 58     | 1     | NO           | YES                | YES               | 0      | 2       | 
+|comb_SA     | data_col57_reg[57]   | 57     | 1     | NO           | YES                | YES               | 0      | 2       | 
+|comb_SA     | data_col56_reg[56]   | 56     | 1     | NO           | YES                | YES               | 0      | 2       | 
+|comb_SA     | data_col55_reg[55]   | 55     | 1     | NO           | YES                | YES               | 0      | 2       | 
+|comb_SA     | data_col54_reg[54]   | 54     | 1     | NO           | YES                | YES               | 0      | 2       | 
+|comb_SA     | data_col53_reg[53]   | 53     | 1     | NO           | YES                | YES               | 0      | 2       | 
+|comb_SA     | data_col52_reg[52]   | 52     | 1     | NO           | YES                | YES               | 0      | 2       | 
+|comb_SA     | data_col51_reg[51]   | 51     | 1     | NO           | YES                | YES               | 0      | 2       | 
+|comb_SA     | data_col50_reg[50]   | 50     | 1     | NO           | YES                | YES               | 0      | 2       | 
+|comb_SA     | data_col49_reg[49]   | 49     | 1     | NO           | YES                | YES               | 0      | 2       | 
+|comb_SA     | data_col48_reg[48]   | 48     | 1     | NO           | YES                | YES               | 0      | 2       | 
+|comb_SA     | data_col47_reg[47]   | 47     | 1     | NO           | YES                | YES               | 0      | 2       | 
+|comb_SA     | data_col46_reg[46]   | 46     | 1     | NO           | YES                | YES               | 0      | 2       | 
+|comb_SA     | data_col45_reg[45]   | 45     | 1     | NO           | YES                | YES               | 0      | 2       | 
+|comb_SA     | data_col44_reg[44]   | 44     | 1     | NO           | YES                | YES               | 0      | 2       | 
+|comb_SA     | data_col43_reg[43]   | 43     | 1     | NO           | YES                | YES               | 0      | 2       | 
+|comb_SA     | data_col42_reg[42]   | 42     | 1     | NO           | YES                | YES               | 0      | 2       | 
+|comb_SA     | data_col41_reg[41]   | 41     | 1     | NO           | YES                | YES               | 0      | 2       | 
+|comb_SA     | data_col40_reg[40]   | 40     | 1     | NO           | YES                | YES               | 0      | 2       | 
+|comb_SA     | data_col39_reg[39]   | 39     | 1     | NO           | YES                | YES               | 0      | 2       | 
+|comb_SA     | data_col38_reg[38]   | 38     | 1     | NO           | YES                | YES               | 0      | 2       | 
+|comb_SA     | data_col37_reg[37]   | 37     | 1     | NO           | YES                | YES               | 0      | 2       | 
+|comb_SA     | data_col36_reg[36]   | 36     | 1     | NO           | YES                | YES               | 0      | 2       | 
+|comb_SA     | data_col35_reg[35]   | 35     | 1     | NO           | YES                | YES               | 0      | 2       | 
+|comb_SA     | data_col34_reg[34]   | 34     | 1     | NO           | YES                | YES               | 0      | 1       | 
+|comb_SA     | data_col33_reg[33]   | 33     | 1     | NO           | YES                | YES               | 0      | 1       | 
+|comb_SA     | data_col32_reg[32]   | 32     | 1     | NO           | YES                | YES               | 0      | 1       | 
+|comb_SA     | data_col31_reg[31]   | 31     | 1     | NO           | YES                | YES               | 0      | 1       | 
+|comb_SA     | data_col30_reg[30]   | 30     | 1     | NO           | YES                | YES               | 0      | 1       | 
+|comb_SA     | data_col29_reg[29]   | 29     | 1     | NO           | YES                | YES               | 0      | 1       | 
+|comb_SA     | data_col28_reg[28]   | 28     | 1     | NO           | YES                | YES               | 0      | 1       | 
+|comb_SA     | data_col27_reg[27]   | 27     | 1     | NO           | YES                | YES               | 0      | 1       | 
+|comb_SA     | data_col26_reg[26]   | 26     | 1     | NO           | YES                | YES               | 0      | 1       | 
+|comb_SA     | data_col25_reg[25]   | 25     | 1     | NO           | YES                | YES               | 0      | 1       | 
+|comb_SA     | data_col24_reg[24]   | 24     | 1     | NO           | YES                | YES               | 0      | 1       | 
+|comb_SA     | data_col23_reg[23]   | 23     | 1     | NO           | YES                | YES               | 0      | 1       | 
+|comb_SA     | data_col22_reg[22]   | 22     | 1     | NO           | YES                | YES               | 0      | 1       | 
+|comb_SA     | data_col21_reg[21]   | 21     | 1     | NO           | YES                | YES               | 0      | 1       | 
+|comb_SA     | data_col20_reg[20]   | 20     | 1     | NO           | YES                | YES               | 0      | 1       | 
+|comb_SA     | data_col19_reg[19]   | 19     | 1     | NO           | YES                | YES               | 0      | 1       | 
+|comb_SA     | data_col18_reg[18]   | 18     | 1     | NO           | YES                | YES               | 1      | 0       | 
+|comb_SA     | data_col17_reg[17]   | 17     | 1     | NO           | YES                | YES               | 1      | 0       | 
+|comb_SA     | data_col16_reg[16]   | 16     | 1     | NO           | YES                | YES               | 1      | 0       | 
+|comb_SA     | data_col15_reg[15]   | 15     | 1     | NO           | YES                | YES               | 1      | 0       | 
+|comb_SA     | data_col14_reg[14]   | 14     | 1     | NO           | YES                | YES               | 1      | 0       | 
+|comb_SA     | data_col13_reg[13]   | 13     | 1     | NO           | YES                | YES               | 1      | 0       | 
+|comb_SA     | data_col12_reg[12]   | 12     | 1     | NO           | YES                | YES               | 1      | 0       | 
+|comb_SA     | data_col11_reg[11]   | 11     | 1     | NO           | YES                | YES               | 1      | 0       | 
+|comb_SA     | data_col10_reg[10]   | 10     | 1     | NO           | YES                | YES               | 1      | 0       | 
+|comb_SA     | data_col9_reg[9]     | 9      | 1     | NO           | YES                | YES               | 1      | 0       | 
+|comb_SA     | data_col8_reg[8]     | 8      | 1     | NO           | YES                | YES               | 1      | 0       | 
+|comb_SA     | data_col7_reg[7]     | 7      | 1     | NO           | YES                | YES               | 1      | 0       | 
+|comb_SA     | data_col6_reg[6]     | 6      | 1     | NO           | YES                | YES               | 1      | 0       | 
+|comb_SA     | data_col5_reg[5]     | 5      | 1     | NO           | YES                | YES               | 1      | 0       | 
+|comb_SA     | data_col4_reg[4]     | 4      | 1     | NO           | YES                | YES               | 1      | 0       | 
++------------+----------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+--------+------+
+|      |Cell    |Count |
++------+--------+------+
+|1     |BUFG    |     1|
+|2     |LUT2    |   413|
+|3     |LUT3    |     7|
+|4     |LUT4    |   497|
+|5     |LUT5    |   835|
+|6     |LUT6    |  1657|
+|7     |MUXF7   |   410|
+|8     |SRL16E  |    30|
+|9     |SRLC32E |   256|
+|10    |FDRE    |  2395|
+|11    |IBUF    |    87|
+|12    |OBUF    |    85|
++------+--------+------+
+
+Report Instance Areas: 
++------+----------+-----------------+------+
+|      |Instance  |Module           |Cells |
++------+----------+-----------------+------+
+|1     |top       |                 |  6673|
+|2     |  AB_0_0  |processor_AB     |     6|
+|3     |  AB_0_1  |processor_AB_0   |    10|
+|4     |  AB_0_10 |processor_AB_1   |    10|
+|5     |  AB_0_11 |processor_AB_2   |    10|
+|6     |  AB_0_12 |processor_AB_3   |    10|
+|7     |  AB_0_13 |processor_AB_4   |    10|
+|8     |  AB_0_14 |processor_AB_5   |    11|
+|9     |  AB_0_15 |processor_AB_6   |    12|
+|10    |  AB_0_16 |processor_AB_7   |    10|
+|11    |  AB_0_17 |processor_AB_8   |    11|
+|12    |  AB_0_18 |processor_AB_9   |    10|
+|13    |  AB_0_19 |processor_AB_10  |    10|
+|14    |  AB_0_2  |processor_AB_11  |    10|
+|15    |  AB_0_20 |processor_AB_12  |    10|
+|16    |  AB_0_21 |processor_AB_13  |    11|
+|17    |  AB_0_22 |processor_AB_14  |    10|
+|18    |  AB_0_23 |processor_AB_15  |    10|
+|19    |  AB_0_24 |processor_AB_16  |    10|
+|20    |  AB_0_25 |processor_AB_17  |    11|
+|21    |  AB_0_26 |processor_AB_18  |    10|
+|22    |  AB_0_27 |processor_AB_19  |    10|
+|23    |  AB_0_28 |processor_AB_20  |    10|
+|24    |  AB_0_29 |processor_AB_21  |    11|
+|25    |  AB_0_3  |processor_AB_22  |    12|
+|26    |  AB_0_30 |processor_AB_23  |    10|
+|27    |  AB_0_31 |processor_AB_24  |    10|
+|28    |  AB_0_32 |processor_AB_25  |    10|
+|29    |  AB_0_33 |processor_AB_26  |    10|
+|30    |  AB_0_34 |processor_AB_27  |    10|
+|31    |  AB_0_35 |processor_AB_28  |    10|
+|32    |  AB_0_36 |processor_AB_29  |    10|
+|33    |  AB_0_37 |processor_AB_30  |    10|
+|34    |  AB_0_38 |processor_AB_31  |    10|
+|35    |  AB_0_39 |processor_AB_32  |    11|
+|36    |  AB_0_4  |processor_AB_33  |    10|
+|37    |  AB_0_40 |processor_AB_34  |    10|
+|38    |  AB_0_41 |processor_AB_35  |    10|
+|39    |  AB_0_42 |processor_AB_36  |    10|
+|40    |  AB_0_43 |processor_AB_37  |    10|
+|41    |  AB_0_44 |processor_AB_38  |    10|
+|42    |  AB_0_45 |processor_AB_39  |    10|
+|43    |  AB_0_46 |processor_AB_40  |    12|
+|44    |  AB_0_47 |processor_AB_41  |    11|
+|45    |  AB_0_48 |processor_AB_42  |    10|
+|46    |  AB_0_49 |processor_AB_43  |    11|
+|47    |  AB_0_5  |processor_AB_44  |    10|
+|48    |  AB_0_50 |processor_AB_45  |    10|
+|49    |  AB_0_51 |processor_AB_46  |    10|
+|50    |  AB_0_52 |processor_AB_47  |    10|
+|51    |  AB_0_53 |processor_AB_48  |    11|
+|52    |  AB_0_54 |processor_AB_49  |    10|
+|53    |  AB_0_55 |processor_AB_50  |    10|
+|54    |  AB_0_56 |processor_AB_51  |    10|
+|55    |  AB_0_57 |processor_AB_52  |    11|
+|56    |  AB_0_58 |processor_AB_53  |    10|
+|57    |  AB_0_59 |processor_AB_54  |    10|
+|58    |  AB_0_6  |processor_AB_55  |    10|
+|59    |  AB_0_60 |processor_AB_56  |    10|
+|60    |  AB_0_61 |processor_AB_57  |    11|
+|61    |  AB_0_62 |processor_AB_58  |    10|
+|62    |  AB_0_63 |processor_AB_59  |    10|
+|63    |  AB_0_64 |processor_AB_60  |    10|
+|64    |  AB_0_65 |processor_AB_61  |    10|
+|65    |  AB_0_66 |processor_AB_62  |    10|
+|66    |  AB_0_67 |processor_AB_63  |    10|
+|67    |  AB_0_68 |processor_AB_64  |    11|
+|68    |  AB_0_69 |processor_AB_65  |    10|
+|69    |  AB_0_7  |processor_AB_66  |    10|
+|70    |  AB_0_70 |processor_AB_67  |    10|
+|71    |  AB_0_71 |processor_AB_68  |    11|
+|72    |  AB_0_72 |processor_AB_69  |    10|
+|73    |  AB_0_73 |processor_AB_70  |    10|
+|74    |  AB_0_74 |processor_AB_71  |    10|
+|75    |  AB_0_75 |processor_AB_72  |    10|
+|76    |  AB_0_76 |processor_AB_73  |    11|
+|77    |  AB_0_77 |processor_AB_74  |    10|
+|78    |  AB_0_78 |processor_AB_75  |    10|
+|79    |  AB_0_79 |processor_AB_76  |    10|
+|80    |  AB_0_8  |processor_AB_77  |    10|
+|81    |  AB_0_80 |processor_AB_78  |    11|
+|82    |  AB_0_81 |processor_AB_79  |    11|
+|83    |  AB_0_82 |processor_AB_80  |     6|
+|84    |  AB_0_9  |processor_AB_81  |    10|
+|85    |  AB_1_0  |processor_AB_82  |     6|
+|86    |  AB_1_1  |processor_AB_83  |    10|
+|87    |  AB_1_10 |processor_AB_84  |    10|
+|88    |  AB_1_11 |processor_AB_85  |    10|
+|89    |  AB_1_12 |processor_AB_86  |    10|
+|90    |  AB_1_13 |processor_AB_87  |    10|
+|91    |  AB_1_14 |processor_AB_88  |    13|
+|92    |  AB_1_15 |processor_AB_89  |    10|
+|93    |  AB_1_16 |processor_AB_90  |    11|
+|94    |  AB_1_17 |processor_AB_91  |    11|
+|95    |  AB_1_18 |processor_AB_92  |    10|
+|96    |  AB_1_19 |processor_AB_93  |    10|
+|97    |  AB_1_2  |processor_AB_94  |    10|
+|98    |  AB_1_20 |processor_AB_95  |    10|
+|99    |  AB_1_21 |processor_AB_96  |    11|
+|100   |  AB_1_22 |processor_AB_97  |    10|
+|101   |  AB_1_23 |processor_AB_98  |    10|
+|102   |  AB_1_24 |processor_AB_99  |    10|
+|103   |  AB_1_25 |processor_AB_100 |    11|
+|104   |  AB_1_26 |processor_AB_101 |    10|
+|105   |  AB_1_27 |processor_AB_102 |    10|
+|106   |  AB_1_28 |processor_AB_103 |    10|
+|107   |  AB_1_29 |processor_AB_104 |    11|
+|108   |  AB_1_3  |processor_AB_105 |    11|
+|109   |  AB_1_30 |processor_AB_106 |    10|
+|110   |  AB_1_31 |processor_AB_107 |    10|
+|111   |  AB_1_32 |processor_AB_108 |    10|
+|112   |  AB_1_33 |processor_AB_109 |    10|
+|113   |  AB_1_34 |processor_AB_110 |    10|
+|114   |  AB_1_35 |processor_AB_111 |    10|
+|115   |  AB_1_36 |processor_AB_112 |    10|
+|116   |  AB_1_37 |processor_AB_113 |    10|
+|117   |  AB_1_38 |processor_AB_114 |    10|
+|118   |  AB_1_39 |processor_AB_115 |    12|
+|119   |  AB_1_4  |processor_AB_116 |    10|
+|120   |  AB_1_40 |processor_AB_117 |    10|
+|121   |  AB_1_41 |processor_AB_118 |    10|
+|122   |  AB_1_42 |processor_AB_119 |    10|
+|123   |  AB_1_43 |processor_AB_120 |    10|
+|124   |  AB_1_44 |processor_AB_121 |    10|
+|125   |  AB_1_45 |processor_AB_122 |    10|
+|126   |  AB_1_46 |processor_AB_123 |    12|
+|127   |  AB_1_47 |processor_AB_124 |    10|
+|128   |  AB_1_48 |processor_AB_125 |    11|
+|129   |  AB_1_49 |processor_AB_126 |    11|
+|130   |  AB_1_5  |processor_AB_127 |    10|
+|131   |  AB_1_50 |processor_AB_128 |    10|
+|132   |  AB_1_51 |processor_AB_129 |    10|
+|133   |  AB_1_52 |processor_AB_130 |    10|
+|134   |  AB_1_53 |processor_AB_131 |    11|
+|135   |  AB_1_54 |processor_AB_132 |    10|
+|136   |  AB_1_55 |processor_AB_133 |    10|
+|137   |  AB_1_56 |processor_AB_134 |    10|
+|138   |  AB_1_57 |processor_AB_135 |    11|
+|139   |  AB_1_58 |processor_AB_136 |    10|
+|140   |  AB_1_59 |processor_AB_137 |    10|
+|141   |  AB_1_6  |processor_AB_138 |    10|
+|142   |  AB_1_60 |processor_AB_139 |    10|
+|143   |  AB_1_61 |processor_AB_140 |    11|
+|144   |  AB_1_62 |processor_AB_141 |    10|
+|145   |  AB_1_63 |processor_AB_142 |    10|
+|146   |  AB_1_64 |processor_AB_143 |    10|
+|147   |  AB_1_65 |processor_AB_144 |    10|
+|148   |  AB_1_66 |processor_AB_145 |    10|
+|149   |  AB_1_67 |processor_AB_146 |    10|
+|150   |  AB_1_68 |processor_AB_147 |    12|
+|151   |  AB_1_69 |processor_AB_148 |    10|
+|152   |  AB_1_7  |processor_AB_149 |    12|
+|153   |  AB_1_70 |processor_AB_150 |    10|
+|154   |  AB_1_71 |processor_AB_151 |    10|
+|155   |  AB_1_72 |processor_AB_152 |    11|
+|156   |  AB_1_73 |processor_AB_153 |    10|
+|157   |  AB_1_74 |processor_AB_154 |    10|
+|158   |  AB_1_75 |processor_AB_155 |    10|
+|159   |  AB_1_76 |processor_AB_156 |    11|
+|160   |  AB_1_77 |processor_AB_157 |    10|
+|161   |  AB_1_78 |processor_AB_158 |    10|
+|162   |  AB_1_79 |processor_AB_159 |    10|
+|163   |  AB_1_8  |processor_AB_160 |    10|
+|164   |  AB_1_80 |processor_AB_161 |    11|
+|165   |  AB_1_81 |processor_AB_162 |    11|
+|166   |  AB_1_82 |processor_AB_163 |     6|
+|167   |  AB_1_9  |processor_AB_164 |    10|
+|168   |  AB_2_0  |processor_AB_165 |     6|
+|169   |  AB_2_1  |processor_AB_166 |    10|
+|170   |  AB_2_10 |processor_AB_167 |    10|
+|171   |  AB_2_11 |processor_AB_168 |    10|
+|172   |  AB_2_12 |processor_AB_169 |    10|
+|173   |  AB_2_13 |processor_AB_170 |    10|
+|174   |  AB_2_14 |processor_AB_171 |    12|
+|175   |  AB_2_15 |processor_AB_172 |    10|
+|176   |  AB_2_16 |processor_AB_173 |    11|
+|177   |  AB_2_17 |processor_AB_174 |    11|
+|178   |  AB_2_18 |processor_AB_175 |    10|
+|179   |  AB_2_19 |processor_AB_176 |    10|
+|180   |  AB_2_2  |processor_AB_177 |    10|
+|181   |  AB_2_20 |processor_AB_178 |    10|
+|182   |  AB_2_21 |processor_AB_179 |    11|
+|183   |  AB_2_22 |processor_AB_180 |    10|
+|184   |  AB_2_23 |processor_AB_181 |    10|
+|185   |  AB_2_24 |processor_AB_182 |    10|
+|186   |  AB_2_25 |processor_AB_183 |    11|
+|187   |  AB_2_26 |processor_AB_184 |    10|
+|188   |  AB_2_27 |processor_AB_185 |    10|
+|189   |  AB_2_28 |processor_AB_186 |    10|
+|190   |  AB_2_29 |processor_AB_187 |    11|
+|191   |  AB_2_3  |processor_AB_188 |    11|
+|192   |  AB_2_30 |processor_AB_189 |    10|
+|193   |  AB_2_31 |processor_AB_190 |    10|
+|194   |  AB_2_32 |processor_AB_191 |    10|
+|195   |  AB_2_33 |processor_AB_192 |    10|
+|196   |  AB_2_34 |processor_AB_193 |    10|
+|197   |  AB_2_35 |processor_AB_194 |    10|
+|198   |  AB_2_36 |processor_AB_195 |    10|
+|199   |  AB_2_37 |processor_AB_196 |    10|
+|200   |  AB_2_38 |processor_AB_197 |    10|
+|201   |  AB_2_39 |processor_AB_198 |    12|
+|202   |  AB_2_4  |processor_AB_199 |    10|
+|203   |  AB_2_40 |processor_AB_200 |    10|
+|204   |  AB_2_41 |processor_AB_201 |    10|
+|205   |  AB_2_42 |processor_AB_202 |    10|
+|206   |  AB_2_43 |processor_AB_203 |    10|
+|207   |  AB_2_44 |processor_AB_204 |    10|
+|208   |  AB_2_45 |processor_AB_205 |    10|
+|209   |  AB_2_46 |processor_AB_206 |    12|
+|210   |  AB_2_47 |processor_AB_207 |    10|
+|211   |  AB_2_48 |processor_AB_208 |    11|
+|212   |  AB_2_49 |processor_AB_209 |    11|
+|213   |  AB_2_5  |processor_AB_210 |    10|
+|214   |  AB_2_50 |processor_AB_211 |    10|
+|215   |  AB_2_51 |processor_AB_212 |    10|
+|216   |  AB_2_52 |processor_AB_213 |    10|
+|217   |  AB_2_53 |processor_AB_214 |    11|
+|218   |  AB_2_54 |processor_AB_215 |    10|
+|219   |  AB_2_55 |processor_AB_216 |    10|
+|220   |  AB_2_56 |processor_AB_217 |    10|
+|221   |  AB_2_57 |processor_AB_218 |    11|
+|222   |  AB_2_58 |processor_AB_219 |    10|
+|223   |  AB_2_59 |processor_AB_220 |    10|
+|224   |  AB_2_6  |processor_AB_221 |    10|
+|225   |  AB_2_60 |processor_AB_222 |    10|
+|226   |  AB_2_61 |processor_AB_223 |    11|
+|227   |  AB_2_62 |processor_AB_224 |    10|
+|228   |  AB_2_63 |processor_AB_225 |    10|
+|229   |  AB_2_64 |processor_AB_226 |    10|
+|230   |  AB_2_65 |processor_AB_227 |    10|
+|231   |  AB_2_66 |processor_AB_228 |    10|
+|232   |  AB_2_67 |processor_AB_229 |    10|
+|233   |  AB_2_68 |processor_AB_230 |    12|
+|234   |  AB_2_69 |processor_AB_231 |    10|
+|235   |  AB_2_7  |processor_AB_232 |    12|
+|236   |  AB_2_70 |processor_AB_233 |    10|
+|237   |  AB_2_71 |processor_AB_234 |    10|
+|238   |  AB_2_72 |processor_AB_235 |    11|
+|239   |  AB_2_73 |processor_AB_236 |    10|
+|240   |  AB_2_74 |processor_AB_237 |    10|
+|241   |  AB_2_75 |processor_AB_238 |    10|
+|242   |  AB_2_76 |processor_AB_239 |    11|
+|243   |  AB_2_77 |processor_AB_240 |    10|
+|244   |  AB_2_78 |processor_AB_241 |    10|
+|245   |  AB_2_79 |processor_AB_242 |    10|
+|246   |  AB_2_8  |processor_AB_243 |    10|
+|247   |  AB_2_80 |processor_AB_244 |    11|
+|248   |  AB_2_81 |processor_AB_245 |    11|
+|249   |  AB_2_82 |processor_AB_246 |     6|
+|250   |  AB_2_9  |processor_AB_247 |    10|
+|251   |  AB_3_0  |processor_AB_248 |     6|
+|252   |  AB_3_1  |processor_AB_249 |    10|
+|253   |  AB_3_10 |processor_AB_250 |    10|
+|254   |  AB_3_11 |processor_AB_251 |    10|
+|255   |  AB_3_12 |processor_AB_252 |    10|
+|256   |  AB_3_13 |processor_AB_253 |    10|
+|257   |  AB_3_14 |processor_AB_254 |    12|
+|258   |  AB_3_15 |processor_AB_255 |    10|
+|259   |  AB_3_16 |processor_AB_256 |    11|
+|260   |  AB_3_17 |processor_AB_257 |    11|
+|261   |  AB_3_18 |processor_AB_258 |    10|
+|262   |  AB_3_19 |processor_AB_259 |    10|
+|263   |  AB_3_2  |processor_AB_260 |    10|
+|264   |  AB_3_20 |processor_AB_261 |    10|
+|265   |  AB_3_21 |processor_AB_262 |    11|
+|266   |  AB_3_22 |processor_AB_263 |    10|
+|267   |  AB_3_23 |processor_AB_264 |    10|
+|268   |  AB_3_24 |processor_AB_265 |    10|
+|269   |  AB_3_25 |processor_AB_266 |    11|
+|270   |  AB_3_26 |processor_AB_267 |    10|
+|271   |  AB_3_27 |processor_AB_268 |    10|
+|272   |  AB_3_28 |processor_AB_269 |    10|
+|273   |  AB_3_29 |processor_AB_270 |    11|
+|274   |  AB_3_3  |processor_AB_271 |    11|
+|275   |  AB_3_30 |processor_AB_272 |    10|
+|276   |  AB_3_31 |processor_AB_273 |    10|
+|277   |  AB_3_32 |processor_AB_274 |    10|
+|278   |  AB_3_33 |processor_AB_275 |    10|
+|279   |  AB_3_34 |processor_AB_276 |    10|
+|280   |  AB_3_35 |processor_AB_277 |    10|
+|281   |  AB_3_36 |processor_AB_278 |    10|
+|282   |  AB_3_37 |processor_AB_279 |    10|
+|283   |  AB_3_38 |processor_AB_280 |    10|
+|284   |  AB_3_39 |processor_AB_281 |    12|
+|285   |  AB_3_4  |processor_AB_282 |    10|
+|286   |  AB_3_40 |processor_AB_283 |    10|
+|287   |  AB_3_41 |processor_AB_284 |    10|
+|288   |  AB_3_42 |processor_AB_285 |    10|
+|289   |  AB_3_43 |processor_AB_286 |    10|
+|290   |  AB_3_44 |processor_AB_287 |    10|
+|291   |  AB_3_45 |processor_AB_288 |    10|
+|292   |  AB_3_46 |processor_AB_289 |    12|
+|293   |  AB_3_47 |processor_AB_290 |    10|
+|294   |  AB_3_48 |processor_AB_291 |    11|
+|295   |  AB_3_49 |processor_AB_292 |    11|
+|296   |  AB_3_5  |processor_AB_293 |    10|
+|297   |  AB_3_50 |processor_AB_294 |    10|
+|298   |  AB_3_51 |processor_AB_295 |    10|
+|299   |  AB_3_52 |processor_AB_296 |    10|
+|300   |  AB_3_53 |processor_AB_297 |    11|
+|301   |  AB_3_54 |processor_AB_298 |    10|
+|302   |  AB_3_55 |processor_AB_299 |    10|
+|303   |  AB_3_56 |processor_AB_300 |    10|
+|304   |  AB_3_57 |processor_AB_301 |    11|
+|305   |  AB_3_58 |processor_AB_302 |    10|
+|306   |  AB_3_59 |processor_AB_303 |    10|
+|307   |  AB_3_6  |processor_AB_304 |    10|
+|308   |  AB_3_60 |processor_AB_305 |    10|
+|309   |  AB_3_61 |processor_AB_306 |    11|
+|310   |  AB_3_62 |processor_AB_307 |    10|
+|311   |  AB_3_63 |processor_AB_308 |    10|
+|312   |  AB_3_64 |processor_AB_309 |    10|
+|313   |  AB_3_65 |processor_AB_310 |    10|
+|314   |  AB_3_66 |processor_AB_311 |    10|
+|315   |  AB_3_67 |processor_AB_312 |    10|
+|316   |  AB_3_68 |processor_AB_313 |    12|
+|317   |  AB_3_69 |processor_AB_314 |    10|
+|318   |  AB_3_7  |processor_AB_315 |    12|
+|319   |  AB_3_70 |processor_AB_316 |    10|
+|320   |  AB_3_71 |processor_AB_317 |    10|
+|321   |  AB_3_72 |processor_AB_318 |    11|
+|322   |  AB_3_73 |processor_AB_319 |    10|
+|323   |  AB_3_74 |processor_AB_320 |    10|
+|324   |  AB_3_75 |processor_AB_321 |    10|
+|325   |  AB_3_76 |processor_AB_322 |    11|
+|326   |  AB_3_77 |processor_AB_323 |    10|
+|327   |  AB_3_78 |processor_AB_324 |    10|
+|328   |  AB_3_79 |processor_AB_325 |    10|
+|329   |  AB_3_8  |processor_AB_326 |    10|
+|330   |  AB_3_80 |processor_AB_327 |    11|
+|331   |  AB_3_81 |processor_AB_328 |    11|
+|332   |  AB_3_82 |processor_AB_329 |     6|
+|333   |  AB_3_9  |processor_AB_330 |    10|
+|334   |  AB_4_0  |processor_AB_331 |     6|
+|335   |  AB_4_1  |processor_AB_332 |    10|
+|336   |  AB_4_10 |processor_AB_333 |    10|
+|337   |  AB_4_11 |processor_AB_334 |    10|
+|338   |  AB_4_12 |processor_AB_335 |    10|
+|339   |  AB_4_13 |processor_AB_336 |    10|
+|340   |  AB_4_14 |processor_AB_337 |    12|
+|341   |  AB_4_15 |processor_AB_338 |    10|
+|342   |  AB_4_16 |processor_AB_339 |    11|
+|343   |  AB_4_17 |processor_AB_340 |    11|
+|344   |  AB_4_18 |processor_AB_341 |    10|
+|345   |  AB_4_19 |processor_AB_342 |    10|
+|346   |  AB_4_2  |processor_AB_343 |    10|
+|347   |  AB_4_20 |processor_AB_344 |    10|
+|348   |  AB_4_21 |processor_AB_345 |    11|
+|349   |  AB_4_22 |processor_AB_346 |    10|
+|350   |  AB_4_23 |processor_AB_347 |    10|
+|351   |  AB_4_24 |processor_AB_348 |    10|
+|352   |  AB_4_25 |processor_AB_349 |    11|
+|353   |  AB_4_26 |processor_AB_350 |    10|
+|354   |  AB_4_27 |processor_AB_351 |    10|
+|355   |  AB_4_28 |processor_AB_352 |    10|
+|356   |  AB_4_29 |processor_AB_353 |    11|
+|357   |  AB_4_3  |processor_AB_354 |    11|
+|358   |  AB_4_30 |processor_AB_355 |    10|
+|359   |  AB_4_31 |processor_AB_356 |    10|
+|360   |  AB_4_32 |processor_AB_357 |    10|
+|361   |  AB_4_33 |processor_AB_358 |    10|
+|362   |  AB_4_34 |processor_AB_359 |    10|
+|363   |  AB_4_35 |processor_AB_360 |    10|
+|364   |  AB_4_36 |processor_AB_361 |    10|
+|365   |  AB_4_37 |processor_AB_362 |    10|
+|366   |  AB_4_38 |processor_AB_363 |    10|
+|367   |  AB_4_39 |processor_AB_364 |    12|
+|368   |  AB_4_4  |processor_AB_365 |    10|
+|369   |  AB_4_40 |processor_AB_366 |    10|
+|370   |  AB_4_41 |processor_AB_367 |    10|
+|371   |  AB_4_42 |processor_AB_368 |    10|
+|372   |  AB_4_43 |processor_AB_369 |    10|
+|373   |  AB_4_44 |processor_AB_370 |    10|
+|374   |  AB_4_45 |processor_AB_371 |    10|
+|375   |  AB_4_46 |processor_AB_372 |    12|
+|376   |  AB_4_47 |processor_AB_373 |    10|
+|377   |  AB_4_48 |processor_AB_374 |    11|
+|378   |  AB_4_49 |processor_AB_375 |    11|
+|379   |  AB_4_5  |processor_AB_376 |    10|
+|380   |  AB_4_50 |processor_AB_377 |    10|
+|381   |  AB_4_51 |processor_AB_378 |    10|
+|382   |  AB_4_52 |processor_AB_379 |    10|
+|383   |  AB_4_53 |processor_AB_380 |    11|
+|384   |  AB_4_54 |processor_AB_381 |    10|
+|385   |  AB_4_55 |processor_AB_382 |    10|
+|386   |  AB_4_56 |processor_AB_383 |    10|
+|387   |  AB_4_57 |processor_AB_384 |    11|
+|388   |  AB_4_58 |processor_AB_385 |    10|
+|389   |  AB_4_59 |processor_AB_386 |    10|
+|390   |  AB_4_6  |processor_AB_387 |    10|
+|391   |  AB_4_60 |processor_AB_388 |    10|
+|392   |  AB_4_61 |processor_AB_389 |    11|
+|393   |  AB_4_62 |processor_AB_390 |    10|
+|394   |  AB_4_63 |processor_AB_391 |    10|
+|395   |  AB_4_64 |processor_AB_392 |    10|
+|396   |  AB_4_65 |processor_AB_393 |    10|
+|397   |  AB_4_66 |processor_AB_394 |    10|
+|398   |  AB_4_67 |processor_AB_395 |    10|
+|399   |  AB_4_68 |processor_AB_396 |    12|
+|400   |  AB_4_69 |processor_AB_397 |    10|
+|401   |  AB_4_7  |processor_AB_398 |    12|
+|402   |  AB_4_70 |processor_AB_399 |    10|
+|403   |  AB_4_71 |processor_AB_400 |    10|
+|404   |  AB_4_72 |processor_AB_401 |    11|
+|405   |  AB_4_73 |processor_AB_402 |    10|
+|406   |  AB_4_74 |processor_AB_403 |    10|
+|407   |  AB_4_75 |processor_AB_404 |    10|
+|408   |  AB_4_76 |processor_AB_405 |    11|
+|409   |  AB_4_77 |processor_AB_406 |    10|
+|410   |  AB_4_78 |processor_AB_407 |    10|
+|411   |  AB_4_79 |processor_AB_408 |    10|
+|412   |  AB_4_8  |processor_AB_409 |    10|
+|413   |  AB_4_80 |processor_AB_410 |    11|
+|414   |  AB_4_81 |processor_AB_411 |    11|
+|415   |  AB_4_82 |processor_AB_412 |     6|
+|416   |  AB_4_9  |processor_AB_413 |    10|
++------+----------+-----------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:00 ; elapsed = 00:01:20 . Memory (MB): peak = 954.797 ; gain = 642.004
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:43 ; elapsed = 00:00:58 . Memory (MB): peak = 954.797 ; gain = 278.137
+Synthesis Optimization Complete : Time (s): cpu = 00:01:00 ; elapsed = 00:01:20 . Memory (MB): peak = 954.797 ; gain = 642.004
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 497 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+118 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:03 ; elapsed = 00:01:24 . Memory (MB): peak = 954.797 ; gain = 655.016
+INFO: [Common 17-1381] The checkpoint 'C:/Users/David/Dropbox/LRPC Code/hardware/Gaussian_Elimination_Versatile_TriSys/Gaussian_Elimination_Versatile_TriSys.runs/synth_1/comb_SA.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file comb_SA_utilization_synth.rpt -pb comb_SA_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.086 . Memory (MB): peak = 954.797 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Thu Apr  2 10:28:32 2020...

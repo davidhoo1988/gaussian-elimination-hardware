@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_2" LaunchPart="xc7a200tfbg676-1" LaunchTime="1624968934">
+  <File Type="PWROPT-DCP" Name="comb_SA_pwropt.dcp"/>
+  <File Type="ROUTE-PWR" Name="comb_SA_power_routed.rpt"/>
+  <File Type="PA-TCL" Name="comb_SA.tcl"/>
+  <File Type="ROUTE-PWR-SUM" Name="comb_SA_power_summary_routed.pb"/>
+  <File Type="REPORTS-TCL" Name="comb_SA_reports.tcl"/>
+  <File Type="BG-DRC" Name="comb_SA.drc"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="comb_SA_methodology_drc_opted.rpt"/>
+  <File Type="INIT-TIMING" Name="comb_SA_timing_summary_init.rpt"/>
+  <File Type="OPT-HWDEF" Name="comb_SA.hwdef"/>
+  <File Type="OPT-DCP" Name="comb_SA_opt.dcp"/>
+  <File Type="OPT-DRC" Name="comb_SA_drc_opted.rpt"/>
+  <File Type="OPT-TIMING" Name="comb_SA_timing_summary_opted.rpt"/>
+  <File Type="PWROPT-DRC" Name="comb_SA_drc_pwropted.rpt"/>
+  <File Type="PWROPT-TIMING" Name="comb_SA_timing_summary_pwropted.rpt"/>
+  <File Type="PLACE-DCP" Name="comb_SA_placed.dcp"/>
+  <File Type="PLACE-IO" Name="comb_SA_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="comb_SA_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="comb_SA_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="comb_SA_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="comb_SA_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="comb_SA_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="comb_SA_incremental_reuse_pre_placed.rpt"/>
+  <File Type="PLACE-TIMING" Name="comb_SA_timing_summary_placed.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="comb_SA_postplace_pwropt.dcp"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="comb_SA_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="comb_SA_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="comb_SA_drc_physopted.rpt"/>
+  <File Type="BG-BIT" Name="comb_SA.bit"/>
+  <File Type="PHYSOPT-TIMING" Name="comb_SA_timing_summary_physopted.rpt"/>
+  <File Type="ROUTE-ERROR-DCP" Name="comb_SA_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="comb_SA_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="comb_SA_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="comb_SA_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="comb_SA_drc_routed.pb"/>
+  <File Type="BITSTR-MSK" Name="comb_SA.msk"/>
+  <File Type="ROUTE-DRC-RPX" Name="comb_SA_drc_routed.rpx"/>
+  <File Type="BG-BGN" Name="comb_SA.bgn"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="comb_SA_methodology_drc_routed.rpt"/>
+  <File Type="BITSTR-RBT" Name="comb_SA.rbt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="comb_SA_methodology_drc_routed.rpx"/>
+  <File Type="BG-BIN" Name="comb_SA.bin"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="comb_SA_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-PWR-RPX" Name="comb_SA_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="comb_SA_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="comb_SA_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="comb_SA_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="comb_SA_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="comb_SA_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="comb_SA_incremental_reuse_routed.rpt"/>
+  <File Type="RDI-RDI" Name="comb_SA.vdi"/>
+  <File Type="ROUTE-CLK" Name="comb_SA_clock_utilization_routed.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="comb_SA_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="comb_SA_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="comb_SA_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="comb_SA_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="comb_SA_timing_summary_postroute_physopted.rpx"/>
+  <File Type="BITSTR-NKY" Name="comb_SA.nky"/>
+  <File Type="BITSTR-BMM" Name="comb_SA_bd.bmm"/>
+  <File Type="BITSTR-MMI" Name="comb_SA.mmi"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="comb_SA.ltx"/>
+  <File Type="BITSTR-SYSDEF" Name="comb_SA.sysdef"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PPRDIR/Verilog/node.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/Verilog/comb_SA.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/Verilog/comb_SA_tb.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/Verilog/define.v">
+      <FileInfo SFType="VHeader">
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/Verilog/clog2.v">
+      <FileInfo SFType="VHeader">
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/Verilog/mem.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="comb_SA"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/new/usr_constrain.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TargetConstrsFile" Val="$PSRCDIR/constrs_1/new/usr_constrain.xdc"/>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Performance_ExtraTimingOpt" Flow="Vivado Implementation 2018">
+      <Desc>Includes alternate algorithms for timing-driven optimization</Desc>
+    </StratHandle>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design">
+      <Option Id="Directive">8</Option>
+    </Step>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design" EnableStepBool="1">
+      <Option Id="Directive">0</Option>
+    </Step>
+    <Step Id="route_design">
+      <Option Id="Directive">1</Option>
+    </Step>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+</GenRun>

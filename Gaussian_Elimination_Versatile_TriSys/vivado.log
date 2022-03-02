@@ -1,0 +1,279 @@
+#-----------------------------------------------------------
+# Vivado v2018.1 (64-bit)
+# SW Build 2188600 on Wed Apr  4 18:40:38 MDT 2018
+# IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
+# Start of session at: Tue Jun 29 14:13:46 2021
+# Process ID: 17512
+# Current directory: C:/Users/Hu Jingwei/Dropbox/ROLLO/hardware/Gaussian_Elimination_Versatile_TriSys
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent19208 C:\Users\Hu Jingwei\Dropbox\ROLLO\hardware\Gaussian_Elimination_Versatile_TriSys\Gaussian_Elimination_Versatile_TriSys.xpr
+# Log file: C:/Users/Hu Jingwei/Dropbox/ROLLO/hardware/Gaussian_Elimination_Versatile_TriSys/vivado.log
+# Journal file: C:/Users/Hu Jingwei/Dropbox/ROLLO/hardware/Gaussian_Elimination_Versatile_TriSys\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/Hu Jingwei/Dropbox/ROLLO/hardware/Gaussian_Elimination_Versatile_TriSys/Gaussian_Elimination_Versatile_TriSys.xpr}
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+INFO: [Common 17-344] 'open_project' was cancelled
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Jun 29 14:14:08 2021...
+do IP repository 'D:/Xilinx/Vivado/2018.1/data/ip'.
+open_project: Time (s): cpu = 00:00:16 ; elapsed = 00:00:12 . Memory (MB): peak = 882.656 ; gain = 147.457
+update_compile_order -fileset sources_1
+set_property strategy Performance_ExtraTimingOpt [get_runs impl_2]
+update_ip_catalog
+update_ip_catalog
+reset_run synth_2
+launch_runs impl_2 -jobs 4
+[Tue Jun 29 14:14:57 2021] Launched synth_2...
+Run output will be captured here: C:/Users/Hu Jingwei/Dropbox/ROLLO/hardware/Gaussian_Elimination_Versatile_TriSys/Gaussian_Elimination_Versatile_TriSys.runs/synth_2/runme.log
+[Tue Jun 29 14:14:57 2021] Launched impl_2...
+Run output will be captured here: C:/Users/Hu Jingwei/Dropbox/ROLLO/hardware/Gaussian_Elimination_Versatile_TriSys/Gaussian_Elimination_Versatile_TriSys.runs/impl_2/runme.log
+open_run impl_2
+INFO: [Netlist 29-17] Analyzing 764 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.1
+INFO: [Device 21-403] Loading part xc7a200tfbg676-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.462 . Memory (MB): peak = 1936.801 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.462 . Memory (MB): peak = 1936.801 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:37 ; elapsed = 00:00:31 . Memory (MB): peak = 2038.219 ; gain = 1005.551
+open_run synth_2 -name synth_2
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7a200tfbg676-1
+INFO: [Netlist 29-17] Analyzing 764 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [C:/Users/Hu Jingwei/Dropbox/ROLLO/hardware/Gaussian_Elimination_Versatile_TriSys/Gaussian_Elimination_Versatile_TriSys.srcs/constrs_1/new/usr_constrain.xdc]
+Finished Parsing XDC File [C:/Users/Hu Jingwei/Dropbox/ROLLO/hardware/Gaussian_Elimination_Versatile_TriSys/Gaussian_Elimination_Versatile_TriSys.srcs/constrs_1/new/usr_constrain.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+save_constraints
+reset_run synth_2
+reset_run impl_2
+launch_runs impl_2 -jobs 4
+WARNING: [Project 1-478] Design 'synth_2' is stale and will not be used when launching 'impl_2'
+[Tue Jun 29 14:29:26 2021] Launched synth_2...
+Run output will be captured here: C:/Users/Hu Jingwei/Dropbox/ROLLO/hardware/Gaussian_Elimination_Versatile_TriSys/Gaussian_Elimination_Versatile_TriSys.runs/synth_2/runme.log
+[Tue Jun 29 14:29:26 2021] Launched impl_2...
+Run output will be captured here: C:/Users/Hu Jingwei/Dropbox/ROLLO/hardware/Gaussian_Elimination_Versatile_TriSys/Gaussian_Elimination_Versatile_TriSys.runs/impl_2/runme.log
+current_design impl_2
+refresh_design
+INFO: [Netlist 29-17] Analyzing 764 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.481 . Memory (MB): peak = 2265.754 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.481 . Memory (MB): peak = 2265.754 ; gain = 0.000
+refresh_design: Time (s): cpu = 00:00:11 ; elapsed = 00:00:06 . Memory (MB): peak = 2265.754 ; gain = 0.000
+CRITICAL WARNING: [Timing 38-282] The design failed to meet the timing requirements. Please see the timing summary report for details on the timing violations.
+save_constraints
+reset_run synth_2
+reset_run impl_2
+launch_runs impl_2 -jobs 4
+WARNING: [Project 1-478] Design 'synth_2' is stale and will not be used when launching 'impl_2'
+[Tue Jun 29 14:44:33 2021] Launched synth_2...
+Run output will be captured here: C:/Users/Hu Jingwei/Dropbox/ROLLO/hardware/Gaussian_Elimination_Versatile_TriSys/Gaussian_Elimination_Versatile_TriSys.runs/synth_2/runme.log
+[Tue Jun 29 14:44:33 2021] Launched impl_2...
+Run output will be captured here: C:/Users/Hu Jingwei/Dropbox/ROLLO/hardware/Gaussian_Elimination_Versatile_TriSys/Gaussian_Elimination_Versatile_TriSys.runs/impl_2/runme.log
+refresh_design
+INFO: [Netlist 29-17] Analyzing 764 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.485 . Memory (MB): peak = 2271.434 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.485 . Memory (MB): peak = 2271.434 ; gain = 0.000
+refresh_design: Time (s): cpu = 00:00:11 ; elapsed = 00:00:07 . Memory (MB): peak = 2289.688 ; gain = 24.398
+CRITICAL WARNING: [Timing 38-282] The design failed to meet the timing requirements. Please see the timing summary report for details on the timing violations.
+save_constraints
+reset_run synth_2
+reset_run impl_2
+launch_runs impl_2 -jobs 4
+WARNING: [Project 1-478] Design 'synth_2' is stale and will not be used when launching 'impl_2'
+[Tue Jun 29 14:58:41 2021] Launched synth_2...
+Run output will be captured here: C:/Users/Hu Jingwei/Dropbox/ROLLO/hardware/Gaussian_Elimination_Versatile_TriSys/Gaussian_Elimination_Versatile_TriSys.runs/synth_2/runme.log
+[Tue Jun 29 14:58:41 2021] Launched impl_2...
+Run output will be captured here: C:/Users/Hu Jingwei/Dropbox/ROLLO/hardware/Gaussian_Elimination_Versatile_TriSys/Gaussian_Elimination_Versatile_TriSys.runs/impl_2/runme.log
+refresh_design
+INFO: [Netlist 29-17] Analyzing 764 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.434 . Memory (MB): peak = 2306.309 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.434 . Memory (MB): peak = 2306.309 ; gain = 0.000
+refresh_design: Time (s): cpu = 00:00:12 ; elapsed = 00:00:07 . Memory (MB): peak = 2311.195 ; gain = 13.313
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_2
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+report_utilization -name utilization_1
+report_utilization: Time (s): cpu = 00:00:10 ; elapsed = 00:00:04 . Memory (MB): peak = 2324.809 ; gain = 13.117
+reset_run synth_2
+launch_runs impl_2 -jobs 4
+WARNING: [Project 1-478] Design 'synth_2' is stale and will not be used when launching 'impl_2'
+[Tue Jun 29 15:20:33 2021] Launched synth_2...
+Run output will be captured here: C:/Users/Hu Jingwei/Dropbox/ROLLO/hardware/Gaussian_Elimination_Versatile_TriSys/Gaussian_Elimination_Versatile_TriSys.runs/synth_2/runme.log
+[Tue Jun 29 15:20:33 2021] Launched impl_2...
+Run output will be captured here: C:/Users/Hu Jingwei/Dropbox/ROLLO/hardware/Gaussian_Elimination_Versatile_TriSys/Gaussian_Elimination_Versatile_TriSys.runs/impl_2/runme.log
+close_design
+close_design
+reset_run synth_2
+launch_runs synth_2 -jobs 4
+[Tue Jun 29 15:30:28 2021] Launched synth_2...
+Run output will be captured here: C:/Users/Hu Jingwei/Dropbox/ROLLO/hardware/Gaussian_Elimination_Versatile_TriSys/Gaussian_Elimination_Versatile_TriSys.runs/synth_2/runme.log
+launch_runs impl_2 -jobs 4
+[Tue Jun 29 15:37:28 2021] Launched impl_2...
+Run output will be captured here: C:/Users/Hu Jingwei/Dropbox/ROLLO/hardware/Gaussian_Elimination_Versatile_TriSys/Gaussian_Elimination_Versatile_TriSys.runs/impl_2/runme.log
+open_run impl_2
+INFO: [Netlist 29-17] Analyzing 2504 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2569.313 ; gain = 0.000
+Restored from archive | CPU: 3.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2569.313 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 30 instances were transformed.
+  SRLC32E => SRL16E: 30 instances
+
+open_run: Time (s): cpu = 00:00:15 ; elapsed = 00:00:10 . Memory (MB): peak = 2569.313 ; gain = 0.000
+open_report: Time (s): cpu = 00:00:10 ; elapsed = 00:00:05 . Memory (MB): peak = 2587.801 ; gain = 18.488
+open_run synth_2 -name synth_2
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7a200tfbg676-1
+INFO: [Netlist 29-17] Analyzing 2504 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+Parsing XDC File [C:/Users/Hu Jingwei/Dropbox/ROLLO/hardware/Gaussian_Elimination_Versatile_TriSys/Gaussian_Elimination_Versatile_TriSys.srcs/constrs_1/new/usr_constrain.xdc]
+Finished Parsing XDC File [C:/Users/Hu Jingwei/Dropbox/ROLLO/hardware/Gaussian_Elimination_Versatile_TriSys/Gaussian_Elimination_Versatile_TriSys.srcs/constrs_1/new/usr_constrain.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+open_run: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2776.590 ; gain = 187.008
+INFO: [Common 17-344] 'open_run' was cancelled
+report_utilization -name utilization_1
+report_utilization: Time (s): cpu = 00:00:17 ; elapsed = 00:00:11 . Memory (MB): peak = 2781.234 ; gain = 4.645
+report_utilization: Time (s): cpu = 00:00:17 ; elapsed = 00:00:11 . Memory (MB): peak = 2781.234 ; gain = 4.645
+reset_run synth_2
+launch_runs impl_2 -jobs 4
+[Tue Jun 29 16:07:07 2021] Launched synth_2...
+Run output will be captured here: C:/Users/Hu Jingwei/Dropbox/ROLLO/hardware/Gaussian_Elimination_Versatile_TriSys/Gaussian_Elimination_Versatile_TriSys.runs/synth_2/runme.log
+[Tue Jun 29 16:07:07 2021] Launched impl_2...
+Run output will be captured here: C:/Users/Hu Jingwei/Dropbox/ROLLO/hardware/Gaussian_Elimination_Versatile_TriSys/Gaussian_Elimination_Versatile_TriSys.runs/impl_2/runme.log
+refresh_design
+INFO: [Netlist 29-17] Analyzing 8112 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 3246.203 ; gain = 9.336
+Restored from archive | CPU: 10.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 3246.203 ; gain = 9.336
+refresh_design: Time (s): cpu = 00:00:39 ; elapsed = 00:00:30 . Memory (MB): peak = 3246.203 ; gain = 192.922
+open_report: Time (s): cpu = 00:00:24 ; elapsed = 00:00:11 . Memory (MB): peak = 3384.441 ; gain = 138.238
+CRITICAL WARNING: [Timing 38-282] The design failed to meet the timing requirements. Please see the timing summary report for details on the timing violations.
+save_constraints
+reset_run synth_2
+reset_run impl_2
+launch_runs impl_2 -jobs 4
+[Tue Jun 29 18:47:01 2021] Launched synth_2...
+Run output will be captured here: C:/Users/Hu Jingwei/Dropbox/ROLLO/hardware/Gaussian_Elimination_Versatile_TriSys/Gaussian_Elimination_Versatile_TriSys.runs/synth_2/runme.log
+[Tue Jun 29 18:47:01 2021] Launched impl_2...
+Run output will be captured here: C:/Users/Hu Jingwei/Dropbox/ROLLO/hardware/Gaussian_Elimination_Versatile_TriSys/Gaussian_Elimination_Versatile_TriSys.runs/impl_2/runme.log
+refresh_design
+INFO: [Netlist 29-17] Analyzing 8112 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:09 ; elapsed = 00:00:08 . Memory (MB): peak = 3544.055 ; gain = 0.000
+Restored from archive | CPU: 10.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:09 ; elapsed = 00:00:08 . Memory (MB): peak = 3544.055 ; gain = 0.000
+refresh_design: Time (s): cpu = 00:00:39 ; elapsed = 00:00:30 . Memory (MB): peak = 3544.055 ; gain = 122.809
+open_report: Time (s): cpu = 00:00:24 ; elapsed = 00:00:11 . Memory (MB): peak = 3544.055 ; gain = 0.000
+CRITICAL WARNING: [Timing 38-282] The design failed to meet the timing requirements. Please see the timing summary report for details on the timing violations.
+save_constraints
+reset_run synth_2
+reset_run impl_2
+launch_runs impl_2 -jobs 4
+[Tue Jun 29 20:15:34 2021] Launched synth_2...
+Run output will be captured here: C:/Users/Hu Jingwei/Dropbox/ROLLO/hardware/Gaussian_Elimination_Versatile_TriSys/Gaussian_Elimination_Versatile_TriSys.runs/synth_2/runme.log
+[Tue Jun 29 20:15:34 2021] Launched impl_2...
+Run output will be captured here: C:/Users/Hu Jingwei/Dropbox/ROLLO/hardware/Gaussian_Elimination_Versatile_TriSys/Gaussian_Elimination_Versatile_TriSys.runs/impl_2/runme.log
+refresh_design
+INFO: [Netlist 29-17] Analyzing 8112 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:11 ; elapsed = 00:00:10 . Memory (MB): peak = 3670.961 ; gain = 0.000
+Restored from archive | CPU: 12.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:11 ; elapsed = 00:00:10 . Memory (MB): peak = 3670.961 ; gain = 0.000
+refresh_design: Time (s): cpu = 00:00:41 ; elapsed = 00:00:35 . Memory (MB): peak = 3670.961 ; gain = 126.906
+open_report: Time (s): cpu = 00:00:25 ; elapsed = 00:00:11 . Memory (MB): peak = 3670.961 ; gain = 0.000
+CRITICAL WARNING: [Timing 38-282] The design failed to meet the timing requirements. Please see the timing summary report for details on the timing violations.
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Jun 30 12:29:14 2021...
