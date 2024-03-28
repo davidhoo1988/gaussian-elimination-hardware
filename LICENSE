@@ -21,16 +21,3 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
 
-## Generic Gaussian Hardware Generator
-This project implements a Gaussian elimination hardware for cryptographic purposes.
-The distingushing feature making this work differ from other works in the literature is that this work not only
-consider eliminating a non-singular matrix but also a singular matrix.
-
-The Gaussian elimination haredware is divided into two categories, 
-'Gaussian_Elimination_Versatile' performs the Gaussian elimination to triangularize the input matrix,
-and 'Gaussian_Elimination_Versatile_TriSys' performs the Gaussian-Jordan elimination to first triangularize
-and then systemize the input matrix.
-
-
-
-### This project implements a Gaussian elimination hardware for 
